@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Panelmenu = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.Panelmenu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,16 @@
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(824, 465);
             this.Panelmenu.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(169, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Prueba1";
             // 
             // panel4
             // 
@@ -159,16 +169,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 51);
             this.panel1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(184, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Prueba1";
             // 
             // menucafeteria
             // 
