@@ -43,5 +43,15 @@ namespace Cafeteria
         {
             AbrirVentanas(new Produccion());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AbrirVentanas(new NotaDeIngresoInsumo());
+        }
     }
 }

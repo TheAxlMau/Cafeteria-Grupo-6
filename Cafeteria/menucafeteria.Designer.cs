@@ -54,10 +54,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Teal;
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.button7);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button3);
@@ -79,7 +79,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(8, 357);
+            this.button6.Location = new System.Drawing.Point(8, 412);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(162, 41);
             this.button6.TabIndex = 0;
@@ -88,16 +88,17 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(78, 299);
+            this.button7.Location = new System.Drawing.Point(74, 315);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 0;
             this.button7.Text = "Nota ingreso";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 328);
+            this.button1.Location = new System.Drawing.Point(74, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -112,6 +113,7 @@
             this.button5.TabIndex = 0;
             this.button5.Text = "Inventario";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
