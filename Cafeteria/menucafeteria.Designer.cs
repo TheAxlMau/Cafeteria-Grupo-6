@@ -41,6 +41,7 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Panelmenu.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // Panelmenu
             // 
             this.Panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Panelmenu.Controls.Add(this.label3);
             this.Panelmenu.Controls.Add(this.label2);
             this.Panelmenu.Controls.Add(this.label1);
             this.Panelmenu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -181,6 +183,18 @@
             this.label2.Size = new System.Drawing.Size(81, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Prueba2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(424, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Prueba3";
+            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
             // menucafeteria
             // 
@@ -214,6 +228,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
