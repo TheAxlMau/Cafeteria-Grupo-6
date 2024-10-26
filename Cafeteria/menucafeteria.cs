@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cafeteria
 {
-    public partial class Form1 : Form
+    public partial class menucafeteria : Form
     {
-        public Form1()
+        public menucafeteria()
         {
             InitializeComponent();
         }

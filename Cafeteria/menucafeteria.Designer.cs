@@ -1,6 +1,6 @@
 ﻿namespace Cafeteria
 {
-    partial class Form1
+    partial class menucafeteria
     {
         /// <summary>
         /// Variable del diseñador necesaria.
