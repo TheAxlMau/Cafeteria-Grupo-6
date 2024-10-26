@@ -76,6 +76,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Orden Venta";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button6
             // 
@@ -85,6 +86,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "Proveedores";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -104,6 +106,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Inventario";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
