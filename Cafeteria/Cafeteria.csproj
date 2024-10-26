@@ -70,6 +70,12 @@
     <Compile Include="NotaDeIngresoInsumo.Designer.cs">
       <DependentUpon>NotaDeIngresoInsumo.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotaDeSalidaInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaDeSalidaInsumos.Designer.cs">
+      <DependentUpon>NotaDeSalidaInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Produccion.cs">
       <SubType>Form</SubType>
     </Compile>
