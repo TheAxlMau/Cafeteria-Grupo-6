@@ -33,5 +33,10 @@ namespace Cafeteria
         {
             AbrirVentanas(new ProductosVenta());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirVentanas(new Cliente());
+        }
     }
 }
