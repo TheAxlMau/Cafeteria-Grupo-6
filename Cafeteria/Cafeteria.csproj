@@ -114,6 +114,9 @@
     <EmbeddedResource Include="NotaDeIngresoInsumo.resx">
       <DependentUpon>NotaDeIngresoInsumo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NotaDeSalidaInsumos.resx">
+      <DependentUpon>NotaDeSalidaInsumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Produccion.resx">
       <DependentUpon>Produccion.cs</DependentUpon>
     </EmbeddedResource>
