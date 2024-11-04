@@ -66,7 +66,7 @@ namespace Cafeteria
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            AbrirVentanas(new Proveedores());
         }
 
         private void label2_Click(object sender, EventArgs e)

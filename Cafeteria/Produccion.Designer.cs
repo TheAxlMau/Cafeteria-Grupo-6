@@ -132,7 +132,7 @@
             this.ColumnInsumos,
             this.ColumnPrecio,
             this.ColumnDescripcion});
-            this.dataGridView1.Location = new System.Drawing.Point(308, 15);
+            this.dataGridView1.Location = new System.Drawing.Point(351, 41);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -216,7 +216,7 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(19, 184);
+            this.groupBox1.Location = new System.Drawing.Point(62, 210);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -275,7 +275,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(656, 389);
+            this.button5.Location = new System.Drawing.Point(699, 415);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(68, 32);
@@ -285,7 +285,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(576, 389);
+            this.button4.Location = new System.Drawing.Point(619, 415);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(68, 32);
@@ -295,7 +295,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(492, 388);
+            this.button3.Location = new System.Drawing.Point(535, 414);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(73, 33);
@@ -305,7 +305,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(17, 388);
+            this.button2.Location = new System.Drawing.Point(60, 414);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 33);
@@ -323,7 +323,7 @@
             this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(19, 15);
+            this.groupBox3.Location = new System.Drawing.Point(62, 41);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -336,7 +336,7 @@
             // 
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(19, 326);
+            this.groupBox2.Location = new System.Drawing.Point(62, 352);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -347,6 +347,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -359,14 +360,14 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(824, 485);
             this.panel1.TabIndex = 2;
             // 
             // Produccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 485);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Produccion";

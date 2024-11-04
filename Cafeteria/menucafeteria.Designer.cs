@@ -29,8 +29,17 @@
         private void InitializeComponent()
         {
             this.Panelmenu = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,39 +49,31 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Panelmenu.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panelmenu
             // 
-            this.Panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Panelmenu.Controls.Add(this.label3);
-            this.Panelmenu.Controls.Add(this.label2);
-            this.Panelmenu.Controls.Add(this.label1);
+            this.Panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
             this.Panelmenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panelmenu.Location = new System.Drawing.Point(173, 51);
+            this.Panelmenu.Location = new System.Drawing.Point(173, 31);
             this.Panelmenu.Name = "Panelmenu";
-            this.Panelmenu.Size = new System.Drawing.Size(824, 465);
+            this.Panelmenu.Size = new System.Drawing.Size(824, 485);
             this.Panelmenu.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Prueba1";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Teal;
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.button7);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(74)))), ((int)(((byte)(44)))));
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.button5);
@@ -80,16 +81,105 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.btnProductos);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 51);
+            this.panel4.Location = new System.Drawing.Point(0, 31);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(173, 465);
+            this.panel4.Size = new System.Drawing.Size(173, 485);
             this.panel4.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel9.Location = new System.Drawing.Point(0, 329);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 30);
+            this.panel9.TabIndex = 3;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel8.Location = new System.Drawing.Point(0, 293);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 30);
+            this.panel8.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel7.Location = new System.Drawing.Point(0, 257);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(10, 30);
+            this.panel7.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel6.Location = new System.Drawing.Point(0, 221);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 30);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel5.Location = new System.Drawing.Point(0, 185);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 30);
+            this.panel5.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel3.Location = new System.Drawing.Point(0, 149);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 30);
+            this.panel3.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cafeteria.Properties.Resources.Imagen_de_WhatsApp_2024_10_23_a_las_18_15_14_5058afa2;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 115);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel11);
+            this.panel2.Controls.Add(this.panel10);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Location = new System.Drawing.Point(24, 374);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(149, 81);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel11.Location = new System.Drawing.Point(0, 48);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(10, 30);
+            this.panel11.TabIndex = 3;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.panel10.Location = new System.Drawing.Point(0, 12);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(10, 30);
+            this.panel10.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(74, 364);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(10, 48);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(139, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Inventario";
             this.button1.UseVisualStyleBackColor = true;
@@ -97,9 +187,13 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(74, 315);
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Location = new System.Drawing.Point(10, 12);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(139, 30);
             this.button7.TabIndex = 0;
             this.button7.Text = "Nota ingreso";
             this.button7.UseVisualStyleBackColor = true;
@@ -107,9 +201,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(8, 100);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(8, 185);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 41);
+            this.button2.Size = new System.Drawing.Size(165, 30);
             this.button2.TabIndex = 0;
             this.button2.Text = "Orden Venta";
             this.button2.UseVisualStyleBackColor = true;
@@ -117,9 +215,13 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(8, 412);
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(8, 329);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 41);
+            this.button6.Size = new System.Drawing.Size(162, 30);
             this.button6.TabIndex = 0;
             this.button6.Text = "Proveedores";
             this.button6.UseVisualStyleBackColor = true;
@@ -127,9 +229,13 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(8, 241);
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Location = new System.Drawing.Point(8, 293);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 41);
+            this.button5.Size = new System.Drawing.Size(165, 30);
             this.button5.TabIndex = 0;
             this.button5.Text = "Inventario";
             this.button5.UseVisualStyleBackColor = true;
@@ -137,9 +243,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(8, 194);
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(8, 257);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 41);
+            this.button4.Size = new System.Drawing.Size(165, 30);
             this.button4.TabIndex = 0;
             this.button4.Text = "Producción";
             this.button4.UseVisualStyleBackColor = true;
@@ -147,9 +257,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(8, 147);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(8, 221);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 41);
+            this.button3.Size = new System.Drawing.Size(165, 30);
             this.button3.TabIndex = 0;
             this.button3.Text = "Cliente";
             this.button3.UseVisualStyleBackColor = true;
@@ -157,9 +271,13 @@
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(8, 53);
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(147)))), ((int)(((byte)(35)))));
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnProductos.Location = new System.Drawing.Point(8, 149);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(162, 41);
+            this.btnProductos.Size = new System.Drawing.Size(165, 30);
             this.btnProductos.TabIndex = 0;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
@@ -167,34 +285,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(34)))), ((int)(((byte)(5)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 51);
+            this.panel1.Size = new System.Drawing.Size(997, 31);
             this.panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(301, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Prueba2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(424, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Prueba3";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
             // menucafeteria
             // 
@@ -206,9 +302,9 @@
             this.Controls.Add(this.panel1);
             this.Name = "menucafeteria";
             this.Text = "Form1";
-            this.Panelmenu.ResumeLayout(false);
-            this.Panelmenu.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -226,9 +322,16 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 
