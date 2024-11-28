@@ -16,5 +16,20 @@ namespace Cafeteria
         {
             InitializeComponent();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInhabilitar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
