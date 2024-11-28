@@ -1,6 +1,7 @@
 ﻿using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -232,6 +233,46 @@ namespace CapaDatos
             return estandares;
         }
 
+        // Método para obtener un producto por su ID
+        public entProducto BuscarProductoId(int idProducto)
+        {
+            SqlCommand cmd = null;
+            entProducto producto = null; // Inicializamos la variable de tipo entProducto
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.conectar();
+                cmd = new SqlCommand("SELECT * FROM Producto WHERE ProductoID = @idProducto", cn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@idProducto", idProducto);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read()) // Si encuentra un producto
+                {
+                    producto = new entProducto()
+                    {
+                        ProductoID = Convert.ToInt32(dr["ProductoID"]),
+                        EstandaresproductoID = Convert.ToInt32(dr["EstandaresproductoID"]),
+                        TipoProductoID = Convert.ToInt32(dr["TipoProductoID"]),
+                        DescripcionProducto = Convert.ToString(dr["DescripcionProducto"]),
+                        NombreProducto = Convert.ToString(dr["NombreProducto"]),
+                        Precio = Convert.ToDecimal(dr["Precio"]),
+                        FechaRegistroP = dr["FechaRegistroP"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(dr["FechaRegistroP"]),
+                        EstadoProducto = Convert.ToBoolean(dr["EstadoProducto"])
+                    };
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd?.Connection?.Close();
+            }
+            return producto; // Retorna el producto encontrado o null si no se encuentra
+        }
 
         #endregion
     }

@@ -109,6 +109,29 @@ namespace CapaLogica
             }
         }
 
+        public entProducto BuscarProductoId(int idProducto)
+        {
+            try
+            {
+                return datProducto.Instancia.BuscarProductoId(idProducto); // Llama al método en datProducto
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public List<entCliente> ListarClientes()
+        {
+            try
+            {
+                return datCliente.Instancia.ObtenerClientes();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
 
         #endregion Métodos
     }

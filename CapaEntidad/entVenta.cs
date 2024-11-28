@@ -10,10 +10,13 @@ namespace CapaEntidad
     {
         public int VentaID { get; set; }
         public int ClienteID { get; set; }
-        public int MetodoPagoID { get; set; }
+        public string ClienteNombre { get; set; } // Para mostrar en listados
+        public int MetodopagoID { get; set; }
+        public string MetodoPagoNombre { get; set; } // Para mostrar en listados
         public int ProductoID { get; set; }
+        public string ProductoNombre { get; set; } // Para mostrar en listados
         public DateTime FechaVenta { get; set; }
-        public float MontoTotal { get; set; }
+        public decimal MontoTotal { get; set; }
         public bool EstadoV { get; set; }
     }
 }
