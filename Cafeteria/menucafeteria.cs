@@ -46,16 +46,22 @@ namespace Cafeteria
             }
         }
 
-        private void AbrirVentanas(object formhija)
+        private void AbrirVentanas(Form formhija)
         {
             if (this.Panelmenu.Controls.Count > 0)
                 this.Panelmenu.Controls.RemoveAt(0);
+
+
+            formhija.TopLevel = false;
+            formhija.FormBorderStyle = FormBorderStyle.None;
+            formhija.Dock = DockStyle.Fill;
+
             Form fh = formhija as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
+
             this.Panelmenu.Controls.Add(fh);
             this.Panelmenu.Tag = fh;
-            fh.Show();
+            formhija.BringToFront();
+            formhija.Show();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
