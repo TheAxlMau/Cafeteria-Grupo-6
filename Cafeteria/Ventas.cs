@@ -27,37 +27,37 @@ namespace Cafeteria
         {
             try
             {
-                // Obtener los valores de los controles
+                // Obtener el producto seleccionado del ComboBox
                 int productoId = Convert.ToInt32(cmbProductos.SelectedValue);
                 string nombreProducto = cmbProductos.Text; // Nombre visible del producto
-                int cantidad = Convert.ToInt32(txtCantidad.Text);
-                decimal precio = GetPrecioProducto(productoId); // Llamar al método que obtiene el precio
-                decimal subtotal = precio * cantidad;
 
-
-                // Crear un objeto de entProductoVenta con la cantidad y el subtotal
-                entProductoVenta productoVenta = new entProductoVenta
+                // Crear un objeto de entProducto con los datos necesarios
+                entProducto producto = new entProducto
                 {
                     ProductoID = productoId,
-                    NombreProducto = nombreProducto,
-                    Precio = precio,
-                    Cantidad = cantidad,
-                    Subtotal = subtotal
+                    NombreProducto = nombreProducto
                 };
 
-                // Agregar el producto al DataGridView
-                dgvProductos.Rows.Add(productoVenta.ProductoID, productoVenta.NombreProducto, productoVenta.Cantidad, productoVenta.Precio, productoVenta.Subtotal);
+                // Verificar si el producto ya ha sido agregado
+                foreach (DataGridViewRow row in dgvProductos.Rows)
+                {
+                    if (row.Cells["ProductoID"].Value != null && row.Cells["ProductoID"].Value.ToString() == producto.ProductoID.ToString())
+                    {
+                        MessageBox.Show("Este producto ya ha sido agregado.");
+                        return;
+                    }
+                }
 
-                // Actualizar el monto total
-                ActualizarMontoTotal();
-                // Mostrar el precio del producto seleccionado
-                txtPrecio.Text = precio.ToString("F2");
+                // Agregar el producto al DataGridView
+                dgvProductos.Rows.Add(producto.ProductoID, producto.NombreProducto);
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
 
 
 
@@ -97,7 +97,7 @@ namespace Cafeteria
 
             txtMontoTotal.Text = total.ToString("F2"); // Monto total con 2 decimales
         }
-        
+
         private void btnRealizarVenta_Click(object sender, EventArgs e)
         {
             try
@@ -113,13 +113,24 @@ namespace Cafeteria
                 int clienteId = Convert.ToInt32(cmbClientes.SelectedValue);
                 int metodoPagoId = Convert.ToInt32(cmbPago.SelectedValue);
                 DateTime fechaVenta = DateTime.Now; // Usar la fecha actual
-                decimal montoTotal = Convert.ToDecimal(txtMontoTotal.Text);
+
+                // Intentar convertir el texto de txtMontoTotal a decimal
+                decimal montoTotal = 0;
+                string montoTexto = txtMontoTotal.Text.Trim(); // Elimina espacios antes y después
+
+                // Verificar si el texto se puede convertir a decimal
+                if (!decimal.TryParse(montoTexto, out montoTotal))
+                {
+                    MessageBox.Show("El monto total no tiene un formato válido.");
+                    return;
+                }
 
                 // Recorrer los productos en el DataGridView y registrar cada venta
                 foreach (DataGridViewRow row in dgvProductos.Rows)
                 {
                     int productoId = Convert.ToInt32(row.Cells["ProductoID"].Value);
-                    decimal subtotal = Convert.ToDecimal(row.Cells["Subtotal"].Value);
+                    // El monto total se toma del cuadro de texto txtMontoTotal
+                    decimal subtotal = montoTotal;
 
                     // Crear la entidad de venta
                     entVenta venta = new entVenta
@@ -128,7 +139,7 @@ namespace Cafeteria
                         MetodopagoID = metodoPagoId,
                         ProductoID = productoId,
                         FechaVenta = fechaVenta,
-                        MontoTotal = subtotal, // Cada venta tendrá su propio monto por producto
+                        MontoTotal = subtotal, // Cada venta tendrá su monto total
                         EstadoV = true // La venta es válida por defecto
                     };
 
@@ -150,6 +161,8 @@ namespace Cafeteria
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+
 
         private decimal GetPrecioProducto(int productoId)
         {
@@ -232,36 +245,21 @@ namespace Cafeteria
             // Agregar la columna ProductoID
             dgvProductos.Columns.Add(new DataGridViewTextBoxColumn
             {
-                DataPropertyName = "ProductoID",  // Esto se asocia a la propiedad ProductoID de la clase entProductoVenta
-                HeaderText = "Producto ID",       // El título de la columna
-                Visible = true                   // Esta columna será visible
+                Name = "ProductoID",  // Este es el nombre de la columna
+                DataPropertyName = "ProductoID",  // Esto se asocia a la propiedad ProductoID de la clase entProducto
+                HeaderText = "Producto ID",        // El título de la columna
+                Visible = true                  // Esta columna será visible
             });
 
-            // Otras columnas: NombreProducto, Cantidad, Precio, Subtotal
+            // Agregar la columna NombreProducto
             dgvProductos.Columns.Add(new DataGridViewTextBoxColumn
             {
-                DataPropertyName = "NombreProducto",
-                HeaderText = "Producto"
-            });
-
-            dgvProductos.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Cantidad",
-                HeaderText = "Cantidad"
-            });
-
-            dgvProductos.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Precio",
-                HeaderText = "Precio"
-            });
-
-            dgvProductos.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Subtotal",
-                HeaderText = "SubTotal"
+                Name = "NombreProducto",
+                DataPropertyName = "NombreProducto", // Esto se asocia a la propiedad NombreProducto
+                HeaderText = "Producto"             // El título de la columna
             });
         }
+
 
 
 
