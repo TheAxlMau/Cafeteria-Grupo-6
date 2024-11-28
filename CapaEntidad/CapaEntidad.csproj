@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="entCliente.cs" />
     <Compile Include="entComprobanteventa.cs" />
+    <Compile Include="entEstandaresProducto.cs" />
     <Compile Include="entMetodoPago.cs" />
     <Compile Include="entProducto.cs" />
+    <Compile Include="entTipoProducto.cs" />
     <Compile Include="entVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
