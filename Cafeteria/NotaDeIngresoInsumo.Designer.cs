@@ -58,7 +58,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 209);
+            this.dateTimePicker1.Location = new System.Drawing.Point(116, 212);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(184, 20);
             this.dateTimePicker1.TabIndex = 8;
@@ -73,9 +73,9 @@
             this.ColumnProveedor,
             this.ColumnFechaIngresoInsumo,
             this.ColumnEstadoInsumo});
-            this.dataGridView1.Location = new System.Drawing.Point(292, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(316, 64);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 389);
+            this.dataGridView1.Size = new System.Drawing.Size(496, 377);
             this.dataGridView1.TabIndex = 7;
             // 
             // ColumnNombreInsumo
@@ -111,21 +111,21 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 164);
+            this.comboBox1.Location = new System.Drawing.Point(143, 167);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 138);
+            this.textBox3.Location = new System.Drawing.Point(143, 141);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 112);
+            this.textBox2.Location = new System.Drawing.Point(143, 115);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
@@ -133,7 +133,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 308);
+            this.label7.Location = new System.Drawing.Point(38, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
             this.label7.TabIndex = 1;
@@ -142,7 +142,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 209);
+            this.label6.Location = new System.Drawing.Point(27, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 1;
@@ -150,7 +150,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 86);
+            this.textBox1.Location = new System.Drawing.Point(143, 89);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
@@ -158,7 +158,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 171);
+            this.label5.Location = new System.Drawing.Point(80, 174);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 1;
@@ -167,7 +167,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(119, 334);
+            this.checkBox2.Location = new System.Drawing.Point(143, 337);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(78, 17);
             this.checkBox2.TabIndex = 4;
@@ -177,7 +177,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(71, 141);
+            this.label4.Location = new System.Drawing.Point(95, 144);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 1;
@@ -186,7 +186,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(27, 334);
+            this.checkBox1.Location = new System.Drawing.Point(51, 337);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(86, 17);
             this.checkBox1.TabIndex = 3;
@@ -197,7 +197,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Location = new System.Drawing.Point(56, 115);
+            this.label3.Location = new System.Drawing.Point(80, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 1;
@@ -205,7 +205,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(122, 395);
+            this.button2.Location = new System.Drawing.Point(146, 398);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 31);
             this.button2.TabIndex = 2;
@@ -214,9 +214,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 403);
+            this.button1.Location = new System.Drawing.Point(51, 398);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
@@ -224,7 +224,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 89);
+            this.label2.Location = new System.Drawing.Point(38, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 13);
             this.label2.TabIndex = 1;
@@ -234,7 +234,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 18);
+            this.label1.Location = new System.Drawing.Point(333, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 0;
@@ -242,6 +242,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.comboBox1);
@@ -262,16 +263,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(824, 485);
             this.panel1.TabIndex = 1;
             // 
-            // NotraDeIngresoInsumo
+            // NotaDeIngresoInsumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 485);
             this.Controls.Add(this.panel1);
-            this.Name = "NotraDeIngresoInsumo";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "NotaDeIngresoInsumo";
             this.Text = "NotraDeIngresoInsumo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

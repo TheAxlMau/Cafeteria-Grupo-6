@@ -105,7 +105,7 @@
             // txtMontoTotal
             // 
             this.txtMontoTotal.BackColor = System.Drawing.Color.White;
-            this.txtMontoTotal.Location = new System.Drawing.Point(393, 359);
+            this.txtMontoTotal.Location = new System.Drawing.Point(423, 396);
             this.txtMontoTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.Size = new System.Drawing.Size(64, 20);
@@ -124,7 +124,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(62, 315);
+            this.dateTimePicker1.Location = new System.Drawing.Point(92, 352);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(204, 20);
@@ -132,7 +132,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(634, 357);
+            this.button4.Location = new System.Drawing.Point(664, 394);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 28);
@@ -189,7 +189,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(330, 364);
+            this.label8.Location = new System.Drawing.Point(360, 401);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 13);
@@ -199,7 +199,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 319);
+            this.label7.Location = new System.Drawing.Point(46, 356);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
@@ -208,7 +208,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(106, 357);
+            this.button3.Location = new System.Drawing.Point(136, 394);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 28);
@@ -226,7 +226,7 @@
             this.ColumnDescuento,
             this.ColumnImporte,
             this.ColumnFecha});
-            this.dataGridView1.Location = new System.Drawing.Point(332, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(362, 58);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -260,7 +260,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(18, 357);
+            this.button2.Location = new System.Drawing.Point(48, 394);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 28);
@@ -278,7 +278,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Location = new System.Drawing.Point(18, 150);
+            this.groupBox1.Location = new System.Drawing.Point(48, 187);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -302,7 +302,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(18, 21);
+            this.groupBox2.Location = new System.Drawing.Point(48, 58);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -351,6 +351,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
             this.panel1.Controls.Add(this.txtMontoTotal);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.dateTimePicker1);
@@ -365,15 +366,16 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(824, 485);
             this.panel1.TabIndex = 2;
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 485);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventas";
             this.Text = "Ventas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
