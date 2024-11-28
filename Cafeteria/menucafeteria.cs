@@ -12,9 +12,38 @@ namespace Cafeteria
 {
     public partial class menucafeteria : Form
     {
+        private bool arrastrando = false;
+        private Point posicionInicial;
+
         public menucafeteria()
         {
             InitializeComponent();
+        }
+
+        //Movimiento de ventana
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            arrastrando = false;
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            arrastrando = true;
+            posicionInicial = e.Location;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (arrastrando)
+            {
+                // Calcula la nueva posición del formulario
+                this.Location = new Point(
+                    (this.Location.X - posicionInicial.X) + e.X,
+                    (this.Location.Y - posicionInicial.Y) + e.Y);
+
+                // Actualiza para evitar parpadeos
+                this.Update();
+            }
         }
 
         private void AbrirVentanas(object formhija)
@@ -127,28 +156,11 @@ namespace Cafeteria
             txtDescripcionProducto.Text = "";
         }
 
-        private void flowLayoutPanelProductos_MouseClick(object sender, MouseEventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-            // Suscribirse al evento MouseClick para eliminar el panel
-            flowLayoutPanelProductos.MouseClick += (s, args) =>
-            {
-                // Mostrar un cuadro de diálogo de confirmación
-                var result = MessageBox.Show("¿Seguro que deseas eliminar este producto?", "Eliminar producto", MessageBoxButtons.YesNo);
-
-                if (result == DialogResult.Yes)
-                {
-                    // Eliminar el panel del FlowLayoutPanel
-                    flowLayoutPanelProductos.Controls.Remove(flowLayoutPanelProductos);
-                    // Liberar los recursos asociados al panel
-                    flowLayoutPanelProductos.Dispose();
-                }
-            };
-
+            this.Close();
         }
 
-        private void flowLayoutPanelProductos_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
