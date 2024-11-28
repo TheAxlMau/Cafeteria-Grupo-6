@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menucafeteria));
             this.Panelmenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanelProductos = new System.Windows.Forms.FlowLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -223,7 +224,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Cafeteria.Properties.Resources.Imagen_de_WhatsApp_2024_10_23_a_las_18_15_14_5058afa2;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 115);
@@ -406,6 +407,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "menucafeteria";
             this.Text = "Form1";
             this.Panelmenu.ResumeLayout(false);

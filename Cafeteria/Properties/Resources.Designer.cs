@@ -63,9 +63,9 @@ namespace Cafeteria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_10_23_a_las_18_15_14_5058afa2 {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-10-23 a las 18.15.14_5058afa2", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
