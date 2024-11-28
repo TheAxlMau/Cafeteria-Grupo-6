@@ -9,11 +9,12 @@ namespace CapaEntidad
     public class entProducto
     {
         public int ProductoID { get; set; }
-        public int EstandaresProductoID { get; set; }
+        public int EstandaresproductoID { get; set; }
         public int TipoProductoID { get; set; }
-        public String DescripcionProducto { get; set; }
-        public float Precio { get; set; }
-        public DateTime FechaRegistroP { get; set; }
+        public string DescripcionProducto { get; set; }
+        public string NombreProducto { get; set; }
+        public decimal Precio { get; set; }
+        public DateTime? FechaRegistroP { get; set; }
         public bool EstadoProducto { get; set; }
     }
 }

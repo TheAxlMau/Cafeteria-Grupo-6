@@ -8,9 +8,9 @@ namespace CapaEntidad
 {
     public class entEstandaresProducto
     {
-        public int EstandaresProductoID { get; set; }
-        public String NombreEstandares { get; set; }
-        public String DescripcionE { get; set; }
+        public int EstandaresproductoID { get; set; }
+        public string NombreEstandares { get; set; }
+        public string DescripcionE { get; set; }
         public bool EstadoEstandares { get; set; }
     }
 }
