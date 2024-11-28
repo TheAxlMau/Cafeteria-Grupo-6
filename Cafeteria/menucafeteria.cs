@@ -61,7 +61,7 @@ namespace Cafeteria
             this.Panelmenu.Controls.Add(fh);
             this.Panelmenu.Tag = fh;
             formhija.BringToFront();
-            fh.Show();
+            formhija.Show();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
