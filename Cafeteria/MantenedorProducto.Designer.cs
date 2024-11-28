@@ -56,42 +56,49 @@
             // ColumnTipoPro
             // 
             this.ColumnTipoPro.HeaderText = "Tipo Producto";
+            this.ColumnTipoPro.MinimumWidth = 6;
             this.ColumnTipoPro.Name = "ColumnTipoPro";
+            this.ColumnTipoPro.Width = 125;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(555, 148);
+            this.comboBox2.Location = new System.Drawing.Point(684, 179);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(160, 24);
             this.comboBox2.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(555, 333);
+            this.dateTimePicker1.Location = new System.Drawing.Point(740, 410);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(490, 218);
+            this.textBox3.Location = new System.Drawing.Point(654, 268);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 4;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(513, 185);
+            this.textBox5.Location = new System.Drawing.Point(684, 228);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(147, 20);
+            this.textBox5.Size = new System.Drawing.Size(195, 22);
             this.textBox5.TabIndex = 4;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(716, 412);
+            this.button3.Location = new System.Drawing.Point(955, 507);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 3;
             this.button3.Text = "Editar";
             this.button3.UseVisualStyleBackColor = true;
@@ -99,22 +106,26 @@
             // ColumnDetalleProducto
             // 
             this.ColumnDetalleProducto.HeaderText = "Descripcion";
+            this.ColumnDetalleProducto.MinimumWidth = 6;
             this.ColumnDetalleProducto.Name = "ColumnDetalleProducto";
+            this.ColumnDetalleProducto.Width = 125;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(585, 412);
+            this.button2.Location = new System.Drawing.Point(780, 507);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 3;
             this.button2.Text = "Quitar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(460, 412);
+            this.button1.Location = new System.Drawing.Point(613, 507);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 3;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
@@ -122,45 +133,50 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(444, 221);
+            this.label7.Location = new System.Drawing.Point(581, 274);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(49, 16);
             this.label7.TabIndex = 2;
             this.label7.Text = "Precio:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(436, 148);
+            this.label6.Location = new System.Drawing.Point(581, 182);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 13);
+            this.label6.Size = new System.Drawing.Size(92, 16);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Categoría de Producto";
+            this.label6.Text = "Tipo Producto";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(436, 185);
+            this.label5.Location = new System.Drawing.Point(581, 228);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.Size = new System.Drawing.Size(82, 16);
             this.label5.TabIndex = 2;
             this.label5.Text = "Descripción:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(438, 339);
+            this.label4.Location = new System.Drawing.Point(584, 417);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.Size = new System.Drawing.Size(121, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Fecha de Registro:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(436, 102);
+            this.label2.Location = new System.Drawing.Point(581, 126);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 13);
+            this.label2.Size = new System.Drawing.Size(142, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre de Productos:";
             // 
@@ -173,33 +189,42 @@
             this.ColumnTipoPro,
             this.ColumnDetalleProducto,
             this.ColumnFechaPro});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 48);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 59);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(401, 382);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(535, 470);
             this.dataGridView1.TabIndex = 1;
             // 
             // ColumnNombrePro
             // 
             this.ColumnNombrePro.HeaderText = "Nombre";
+            this.ColumnNombrePro.MinimumWidth = 6;
             this.ColumnNombrePro.Name = "ColumnNombrePro";
+            this.ColumnNombrePro.Width = 125;
             // 
             // ColumnCantidadPro
             // 
             this.ColumnCantidadPro.HeaderText = "Cantidad";
+            this.ColumnCantidadPro.MinimumWidth = 6;
             this.ColumnCantidadPro.Name = "ColumnCantidadPro";
+            this.ColumnCantidadPro.Width = 125;
             // 
             // ColumnFechaPro
             // 
             this.ColumnFechaPro.HeaderText = "Fecha de Registro";
+            this.ColumnFechaPro.MinimumWidth = 6;
             this.ColumnFechaPro.Name = "ColumnFechaPro";
+            this.ColumnFechaPro.Width = 125;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(527, 48);
+            this.label1.Location = new System.Drawing.Point(703, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 20);
+            this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mantendor Producto";
             // 
@@ -223,25 +248,28 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(824, 485);
+            this.panel1.Size = new System.Drawing.Size(1099, 597);
             this.panel1.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(555, 95);
+            this.textBox1.Location = new System.Drawing.Point(731, 120);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 7;
             // 
             // MantenedorProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(824, 485);
+            this.ClientSize = new System.Drawing.Size(1099, 597);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorProducto";
             this.Text = "ProductosVenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
