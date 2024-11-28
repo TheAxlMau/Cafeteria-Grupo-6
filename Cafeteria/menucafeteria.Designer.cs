@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.Panelmenu = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelProductos = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDescripcionProducto = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -49,6 +57,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Panelmenu.SuspendLayout();
+            this.flowLayoutPanelProductos.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,11 +67,88 @@
             // Panelmenu
             // 
             this.Panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
+            this.Panelmenu.Controls.Add(this.flowLayoutPanelProductos);
+            this.Panelmenu.Controls.Add(this.label3);
+            this.Panelmenu.Controls.Add(this.label2);
+            this.Panelmenu.Controls.Add(this.txtDescripcionProducto);
+            this.Panelmenu.Controls.Add(this.txtNombreProducto);
+            this.Panelmenu.Controls.Add(this.btnAgregarProducto);
+            this.Panelmenu.Controls.Add(this.label1);
             this.Panelmenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panelmenu.Location = new System.Drawing.Point(173, 31);
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(824, 485);
             this.Panelmenu.TabIndex = 5;
+            // 
+            // flowLayoutPanelProductos
+            // 
+            this.flowLayoutPanelProductos.Controls.Add(this.panel12);
+            this.flowLayoutPanelProductos.Location = new System.Drawing.Point(369, 64);
+            this.flowLayoutPanelProductos.Name = "flowLayoutPanelProductos";
+            this.flowLayoutPanelProductos.Size = new System.Drawing.Size(443, 361);
+            this.flowLayoutPanelProductos.TabIndex = 15;
+            this.flowLayoutPanelProductos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelProductos_Paint);
+            this.flowLayoutPanelProductos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanelProductos_MouseClick);
+            // 
+            // panel12
+            // 
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(440, 361);
+            this.panel12.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.Location = new System.Drawing.Point(56, 213);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Descripción:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 177);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Producto:";
+            // 
+            // txtDescripcionProducto
+            // 
+            this.txtDescripcionProducto.Location = new System.Drawing.Point(132, 213);
+            this.txtDescripcionProducto.Name = "txtDescripcionProducto";
+            this.txtDescripcionProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcionProducto.TabIndex = 12;
+            // 
+            // txtNombreProducto
+            // 
+            this.txtNombreProducto.Location = new System.Drawing.Point(132, 170);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreProducto.TabIndex = 11;
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.Location = new System.Drawing.Point(117, 384);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProducto.TabIndex = 10;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 31);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Produccion Producto";
             // 
             // panel4
             // 
@@ -302,6 +389,9 @@
             this.Controls.Add(this.panel1);
             this.Name = "menucafeteria";
             this.Text = "Form1";
+            this.Panelmenu.ResumeLayout(false);
+            this.Panelmenu.PerformLayout();
+            this.flowLayoutPanelProductos.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -332,6 +422,14 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtDescripcionProducto;
+        private System.Windows.Forms.TextBox txtNombreProducto;
+        private System.Windows.Forms.Button btnAgregarProducto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelProductos;
+        private System.Windows.Forms.Panel panel12;
     }
 }
 
