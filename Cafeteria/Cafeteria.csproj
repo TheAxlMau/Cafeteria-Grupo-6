@@ -58,6 +58,12 @@
     <Compile Include="Inventario.Designer.cs">
       <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProduccionProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduccionProductos.Designer.cs">
+      <DependentUpon>ProduccionProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="menucafeteria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +88,11 @@
     <Compile Include="Produccion.Designer.cs">
       <DependentUpon>Produccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductosVenta.cs">
+    <Compile Include="MantenedorProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductosVenta.Designer.cs">
-      <DependentUpon>ProductosVenta.cs</DependentUpon>
+    <Compile Include="MantenedorProducto.Designer.cs">
+      <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +114,9 @@
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProduccionProductos.resx">
+      <DependentUpon>ProduccionProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menucafeteria.resx">
       <DependentUpon>menucafeteria.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,8 +129,8 @@
     <EmbeddedResource Include="Produccion.resx">
       <DependentUpon>Produccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductosVenta.resx">
-      <DependentUpon>ProductosVenta.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorProducto.resx">
+      <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
