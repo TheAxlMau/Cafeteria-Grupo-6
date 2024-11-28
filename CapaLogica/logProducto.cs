@@ -83,6 +83,33 @@ namespace CapaLogica
                 throw e;
             }
         }
+
+        public List<KeyValuePair<int, string>> ObtenerTiposProducto()
+        {
+            try
+            {
+                return datProducto.Instancia.ObtenerTiposProducto(); // O datTipoProducto.Instancia si lo tienes separado
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public List<KeyValuePair<int, string>> ObtenerEstandaresProducto()
+        {
+            try
+            {
+                return datProducto.Instancia.ObtenerEstandaresProducto(); // O datEstandarProducto.Instancia si está separado
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
         #endregion Métodos
     }
 }

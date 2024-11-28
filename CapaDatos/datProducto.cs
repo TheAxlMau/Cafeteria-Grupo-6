@@ -179,6 +179,60 @@ namespace CapaDatos
             return result;
         }
 
+        public List<KeyValuePair<int, string>> ObtenerTiposProducto()
+        {
+            SqlCommand cmd = null;
+            List<KeyValuePair<int, string>> tipos = new List<KeyValuePair<int, string>>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.conectar();
+                cmd = new SqlCommand("SELECT TipoProductoID, NombreTipoProducto FROM TipoProducto", cn); // Cambia el nombre de tu tabla/columna si es necesario
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    tipos.Add(new KeyValuePair<int, string>(Convert.ToInt32(dr["TipoProductoID"]), dr["NombreTipoProducto"].ToString()));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cmd?.Connection.Close();
+            }
+            return tipos;
+        }
+
+
+        public List<KeyValuePair<int, string>> ObtenerEstandaresProducto()
+        {
+            SqlCommand cmd = null;
+            List<KeyValuePair<int, string>> estandares = new List<KeyValuePair<int, string>>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.conectar();
+                cmd = new SqlCommand("SELECT EstandaresproductoID, NombreEstandares FROM Estandaresproducto", cn);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    estandares.Add(new KeyValuePair<int, string>(Convert.ToInt32(dr["EstandaresproductoID"]), dr["NombreEstandares"].ToString()));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cmd?.Connection.Close();
+            }
+            return estandares;
+        }
+
+
         #endregion
     }
 }
