@@ -8,5 +8,7 @@ namespace CapaDatos
 {
     internal class datProducto
     {
+
+
     }
 }

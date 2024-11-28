@@ -35,14 +35,15 @@
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanelProductos = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(197)))), ((int)(((byte)(151)))));
-            this.panel1.Controls.Add(this.flowLayoutPanelProductos);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDescripcionProducto);
@@ -110,18 +111,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Produccion Producto";
             // 
-            // flowLayoutPanelProductos
+            // dataGridView1
             // 
-            this.flowLayoutPanelProductos.ColumnCount = 2;
-            this.flowLayoutPanelProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.13263F));
-            this.flowLayoutPanelProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.86737F));
-            this.flowLayoutPanelProductos.Location = new System.Drawing.Point(364, 41);
-            this.flowLayoutPanelProductos.Name = "flowLayoutPanelProductos";
-            this.flowLayoutPanelProductos.RowCount = 2;
-            this.flowLayoutPanelProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.1529F));
-            this.flowLayoutPanelProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.8471F));
-            this.flowLayoutPanelProductos.Size = new System.Drawing.Size(377, 327);
-            this.flowLayoutPanelProductos.TabIndex = 8;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(401, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(367, 334);
+            this.dataGridView1.TabIndex = 8;
             // 
             // ProduccionProductos
             // 
@@ -134,6 +130,7 @@
             this.Text = "MantenedorEstandaresProducto";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,6 +144,6 @@
         private System.Windows.Forms.TextBox txtNombreProducto;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TableLayoutPanel flowLayoutPanelProductos;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

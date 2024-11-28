@@ -51,9 +51,6 @@ namespace Cafeteria
                 panelProducto.Controls.Add(labelDescripcion);
                 panelProducto.Controls.Add(labelNombre);
 
-                // Agregar el panel de producto al FlowLayoutPanel
-                flowLayoutPanelProductos.Controls.Add(panelProducto);
-
                 // Limpiar los TextBox después de agregar el producto
                 txtNombreProducto.Text = "";
                 txtDescripcionProducto.Text = "";
