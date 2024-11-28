@@ -57,11 +57,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.Panelmenu.SuspendLayout();
             this.flowLayoutPanelProductos.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panelmenu
@@ -87,8 +89,6 @@
             this.flowLayoutPanelProductos.Name = "flowLayoutPanelProductos";
             this.flowLayoutPanelProductos.Size = new System.Drawing.Size(443, 361);
             this.flowLayoutPanelProductos.TabIndex = 15;
-            this.flowLayoutPanelProductos.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelProductos_Paint);
-            this.flowLayoutPanelProductos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanelProductos_MouseClick);
             // 
             // panel12
             // 
@@ -373,11 +373,29 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(34)))), ((int)(((byte)(5)))));
+            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 31);
             this.panel1.TabIndex = 3;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(962, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(35, 31);
+            this.btnCerrar.TabIndex = 16;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // menucafeteria
             // 
@@ -387,6 +405,7 @@
             this.Controls.Add(this.Panelmenu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "menucafeteria";
             this.Text = "Form1";
             this.Panelmenu.ResumeLayout(false);
@@ -395,6 +414,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -430,6 +450,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelProductos;
         private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
 
